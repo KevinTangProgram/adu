@@ -1,0 +1,289 @@
+.topGrid
+{
+    display: grid;
+    margin: 1em;
+    margin-left: 2em;
+}
+
+.navigationBar
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+.fitSize
+{
+    position: absolute;
+    width: 80px;
+    margin-left: 1em;
+}
+
+.centerVertically
+{
+    position: absolute;
+    margin-top: 33px;
+    font-size: 25px;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav li
+{
+    list-style: none;
+    padding: 10px;
+    margin: 0 10px;
+    animation-fill-mode: forwards;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+  
+.hover-underline-animation::after 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after 
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hover-underline-animation-white {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+  
+.hover-underline-animation-white::after 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation-white:hover::after 
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.homeVideo
+{
+    display: grid;
+    width: 100%;
+    height: calc(99vh - 6em);
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerHorizontally
+{
+    text-align: center;
+}
+
+.contactTable
+{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-bottom: 50px;
+}
+
+textarea {
+    overflow:auto;
+    resize:none;
+    width: auto;
+    height:100px;
+    margin-bottom: 20px;
+}
+
+.testing
+{
+    position: absolute;
+    width: calc(1235px/3);
+    object-fit: cover;
+    object-position: 50% 50%;
+    z-index: -1;
+    filter: brightness(80%);
+    border-color: white;
+    border-style: solid;
+    border-width: 0px 0px 0px 2px;
+}
+
+.learnMoreContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learnMoreOutline
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.learnMoreBox
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 0rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.hover-highlight-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+  
+.hover-highlight-animation::after 
+{
+    content: '';
+    padding-top: 17px;
+    color: white;
+    position: absolute;
+    width: 101%;
+    transform: scaleY(0);
+    height: 35px;
+    margin-top: -16px;
+    text-align: center;
+    margin-left: calc(-100% + 15.5px);
+    background-color: black;
+    transform-origin: top;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-highlight-animation:hover::after 
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    content: 'Getting Started';
+}
+
+.hover-highlight-animation1 {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+  
+.hover-highlight-animation1::after 
+{
+    content: '';
+    padding-top: 17px;
+    color: white;
+    position: absolute;
+    width: 101%;
+    transform: scaleY(0);
+    height: 34px;
+    margin-top: -16px;
+    text-align: center;
+    margin-left: calc(-100% + 15.25px);
+    background-color: black;
+    transform-origin: top;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-highlight-animation1:hover::after 
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    content: 'Learn More';
+}
+
+.faqButton
+{
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-radius: 0rem;
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+}
+
+.faqButton:hover
+{
+    color: rgb(210, 47, 37);
+}
+
+.faqAnswer
+{
+    margin-left: 2%;
+    font-size: 18px;
+    color: gray;
+    padding: 0px 0px 16px 16px;
+}
+
+.redButton
+{
+    background-color: rgb(210, 47, 37);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.redButton:hover
+{
+    background-color: rgb(245, 74, 67);
+}
+
+#contactUsButton
+{
+    width: 160px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
